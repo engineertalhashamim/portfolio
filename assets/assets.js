@@ -5,7 +5,7 @@ import edu_icon from "./edu-icon.png";
 import edu_icon_dark from "./edu-icon-dark.png";
 import project_icon from "./project-icon.png";
 import project_icon_dark from "./project-icon-dark.png";
-import vscode from "./vscode.png";
+// import vscode from "./vscode.png";
 import firebase from "./firebase.png";
 import figma from "./figma.png";
 import git from "./git.png";
@@ -27,15 +27,20 @@ import menu_black from "./menu-black.png";
 import menu_white from "./menu-white.png";
 import close_black from "./close-black.png";
 import close_white from "./close-white.png";
-import web_icon from "./web-icon.png";
-import mobile_icon from "./mobile-icon.png";
-import ui_icon from "./ui-icon.png";
-import graphics_icon from "./graphics-icon.png";
+import frontend_icon from "./frontend-icon.png";
+import database_icon from "./database_icon.png";
+import shop_icon from "./shop-icon.png";
+import backend_icon from "./backend-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
 import right_arrow_bold from "./right-arrow-bold.png";
 import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 import postgre_sql from "./postgresql.png";
+import react_icon from "./react-icon.png";
+import next_icon from "./nextjs-icon.png";
+import wordpress from "./wordpress.png";
+import shopify_icon from "./shopify.png";
+// Icons Services
 
 export const assets = {
   user_image,
@@ -45,7 +50,7 @@ export const assets = {
   edu_icon_dark,
   project_icon,
   project_icon_dark,
-  vscode,
+  // vscode,
   firebase,
   figma,
   git,
@@ -67,18 +72,30 @@ export const assets = {
   menu_white,
   close_black,
   close_white,
-  web_icon,
-  mobile_icon,
-  ui_icon,
-  graphics_icon,
+  frontend_icon,
+  database_icon,
+  shop_icon,
+  backend_icon,
   right_arrow,
   send_icon,
   right_arrow_bold,
   right_arrow_bold_dark,
   postgre_sql,
+  react_icon,
+  next_icon,
+  wordpress,
+  shopify_icon,
 };
 
 export const workDataMern = [
+  {
+    title: "ERP Solution",
+    description: "PERN",
+    detailDes:
+      "Built a full-stack ERP software for a hardware business using React, Redux, Express, and PostgreSQL, featuring secure login with express sessions, multi-warehouse management, and dynamic setup for users, products, and accounts. Implemented N-level chart of accounts, products and warehouse management and actively developing sales, purchase modules for complete operational control.",
+    bgImage: "/erp-project.png",
+    viewSource: "https://github.com/engineertalhashamim/hydraulic-project",
+  },
   {
     title: "Sofa Set Landing Page",
     description: "React JS",
@@ -234,29 +251,31 @@ export const workDataShopify = [
 
 export const serviceData = [
   {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
-  },
-  {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
+    icon: assets.frontend_icon,
+    title: "Frontend Development",
     description:
-      "Mobile app development involves creating software for mobile devices...",
+      "Building responsive, modern UIs with React, Next.js, and Tailwind CSS.",
     link: "",
   },
   {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
+    icon: assets.database_icon,
+    title: "Backend & Database",
     description:
-      "UI/UX design focuses on creating a seamless user experience...",
+      "Scalable Node.js APIs with PostgreSQL and MongoDB integration.",
     link: "",
   },
   {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
+    icon: assets.shop_icon,
+    title: "CMS Development",
+    description:
+      "Custom WordPress themes and Shopify stores tailored for business needs.",
+    link: "",
+  },
+  {
+    icon: assets.backend_icon,
+    title: "Full-Stack Development",
+    description:
+      "End-to-end scalable MERN applications with seamless API integration.",
     link: "",
   },
 ];
@@ -288,8 +307,12 @@ export const infoList = [
 export const toolsData = [
   assets.figma,
   assets.git,
-  assets.vscode,
+  // assets.vscode,
   assets.firebase,
   assets.mongodb,
   assets.postgre_sql,
+  assets.react_icon,
+  assets.next_icon,
+  assets.wordpress,
+  assets.shopify_icon,
 ];

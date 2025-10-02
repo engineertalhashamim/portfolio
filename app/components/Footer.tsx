@@ -3,21 +3,24 @@ import Image from "next/image";
 import React from "react";
 import { useDarkMode } from "../context/DarkModeContext";
 
-// type FooterProps = {
-//   isDarkMode: boolean;
-//   setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-// };
 
 const Footer = () => {
   const { isDarkMode } = useDarkMode();
-  
 
   return (
     <div className="mt-20">
       <div className="text-center justify-center">
-        <Image alt="" src={isDarkMode ? assets.logo_dark : assets.logo} className="w-36 mx-auto mb-2" />
+        <Image
+          alt=""
+          src={isDarkMode ? assets.logo_dark : assets.logo}
+          className="w-30 mx-auto mb-2"
+        />
         <div className="flex justify-center gap-2 mx-auto w-max text-center items-center">
-          <Image alt="" src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon} className="w-6 h-4" />
+          <Image
+            alt=""
+            src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon}
+            className="w-6 h-4"
+          />
           engr.talhashamim@gmail.com
         </div>
       </div>

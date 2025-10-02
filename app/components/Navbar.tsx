@@ -1,14 +1,8 @@
 import Image from "next/image";
-// import React, { useEffect, useRef, useState } from "react";
 import { useEffect, useRef, useState } from "react";
 import { assets } from "@/assets/assets";
 import Link from "next/link";
 import { useDarkMode } from "../context/DarkModeContext";
-
-// type NavbarProps = {
-//   isDarkMode: boolean;
-//   setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
-// };
 
 const Navbar = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -52,11 +46,11 @@ const Navbar = () => {
             : ""
         }`}
       >
-        <a href="#top">
+        <a href="/#top">
           <Image
             alt=""
             src={isDarkMode ? assets.logo_dark : assets.logo}
-            className="w-28 cursor-pointer mr-14"
+            className="w-26 cursor-pointer mr-14"
           />
         </a>
 

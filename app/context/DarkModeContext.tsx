@@ -35,10 +35,6 @@ export function DarkModeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-// export const useDarkMode = () => useContext(DarkModeContext);
-
-// OR 
-
 export const useDarkMode = () => {
   const context = useContext(DarkModeContext);
   if (!context) {

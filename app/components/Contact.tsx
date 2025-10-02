@@ -8,7 +8,7 @@ const Contact = () => {
 
   const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setResult("Sending...."); 
+    setResult("Sending....");
     const form = event.currentTarget;
     const formData = new FormData(form);
 
@@ -51,7 +51,7 @@ const Contact = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center text-5xl font-ovo"
+        className="text-center text-4xl sm:text-5xl font-ovo"
       >
         Get in touch
       </motion.h2>
@@ -59,12 +59,12 @@ const Contact = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
+        className="text-center max-w-2xl mx-auto mt-5 mb-10 font-ovo"
       >
-        <p>
+        <span>
           I&apos;d love to hear from you! If you have any questions, comments,
           or feedback, please use the form below.
-        </p>
+        </span>
       </motion.p>
       <motion.form
         initial={{ opacity: 0 }}
@@ -78,14 +78,14 @@ const Contact = () => {
           name="apikey"
           value="af0a26f0-b3f6-490c-ac0d-3df68d3b541f"
         ></input>
-        <div className="grid [grid-template-columns:var(--gridTemplateColumns-auto)] gap-6 mt-10 mb-8">
+        <div className="grid [grid-template-columns:var(--gridTemplateColumns-auto)] gap-4 sm:gap-6 mt-10 mb-4 sm:mb-8">
           <motion.input
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 1.1 }}
             type="text"
             name="name"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:border-white/90 dark:bg-dark-hover/30"
+            className="flex-1 px-3 py-2 sm:py-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:border-white/90 dark:bg-dark-hover/30"
             placeholder="Enter your name"
             required
           />
@@ -96,7 +96,7 @@ const Contact = () => {
             transition={{ duration: 0.6, delay: 1.1 }}
             type="email"
             name="email"
-            className="flex-1 p-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:border-white/90 dark:bg-dark-hover/30"
+            className="flex-1 px-3 py-2 sm:py-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:border-white/90 dark:bg-dark-hover/30"
             placeholder="Enter your email"
             required
           />
@@ -107,7 +107,7 @@ const Contact = () => {
           transition={{ duration: 0.6, delay: 1.3 }}
           rows={6}
           name="message"
-          className="w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-md bg-white mb-6 dark:border-white/90 dark:bg-dark-hover/30"
+          className="w-full px-3 py-2 sm:py-3 outline-none border-[0.5px] border-gray-400 rounded-md bg-white dark:border-white/90 dark:bg-dark-hover/30"
           placeholder="Enter your message"
           required
         ></motion.textarea>
@@ -115,7 +115,7 @@ const Contact = () => {
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
           type="submit"
-          className="cursor-pointer py-3 px-8 w-max flex items-center justify-between gap-2 bg-black/80
+          className="cursor-pointer py-3 px-8 mt-6 w-max flex items-center justify-between gap-2 bg-black/80
             text-white rounded-full mx-auto hover:bg-black duration-500 dark:border-[0.5px] dark:bg-transparent dark:hover:bg-dark-hover"
         >
           Submit Now{" "}

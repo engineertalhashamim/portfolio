@@ -12,8 +12,6 @@ import { useDarkMode } from "../context/DarkModeContext";
 import Link from "next/link";
 
 type workProps = {
-  // isDarkMode: boolean;
-  // setIsDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
   showAll: boolean;
   showAllButton: boolean;
 };
@@ -29,7 +27,7 @@ type Project = {
 
 const Work = ({ showAll, showAllButton }: workProps) => {
   const [showPopup, setshowPopup] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null); 
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   const { isDarkMode } = useDarkMode();
 
@@ -38,7 +36,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
   const openPopup = (project: Project) => {
     setshowPopup(true);
     setSelectedProject(project);
-    console.log("project data...", selectedProject); 
+    console.log("project data...", selectedProject);
   };
   const closePopup = () => {
     setshowPopup(false);
@@ -67,24 +65,24 @@ const Work = ({ showAll, showAllButton }: workProps) => {
         transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center mb-2 text-lg font-ovo"
       >
-        My portfolio
+        My Portfolio
       </motion.h4>
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center text-5xl font-ovo"
+        className="text-center text-4xl sm:text-5xl font-ovo"
       >
-        My Lastest Work
+        My Latest Work
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
+        className="text-center max-w-2xl mx-auto mt-5 mb-10 font-ovo"
       >
-        Welcome to my web development portfolio! Explore a collection of
-        projects showcasing my expertise in front-end development.
+        Welcome to my portfolio! Here you’ll find a selection of projects that
+        highlight my skills in front-end and full-stack development.
       </motion.p>
 
       <div className="w-full">
@@ -122,7 +120,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
           </button>
         </div>
         {/* --- Tab Content --- */}
-        <div className="w-full pt-12 rounded-lg">
+        <div className="w-full pt-6 sm:pt-12 rounded-lg">
           {activeTab === "mern" && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -132,40 +130,6 @@ const Work = ({ showAll, showAllButton }: workProps) => {
             >
               {(showAll ? workDataMern : workDataMern.slice(0, 4)).map(
                 (project, index) => (
-                  //   <motion.div
-                  //     whileHover={{ scale: 1.05 }}
-                  //     transition={{ duration: 0.3 }}
-                  //     key={index}
-                  //     className="layout-fill objectfit-cover aspect-square bg-no-repeat bg-cover bg-center rounded-2xl relative cursor-pointer group border-4 border-pink-200"
-                  //     style={{ backgroundImage: `url(${project.bgImage})` }}
-                  //   >
-                  //     <div
-                  //       className="bg-white w-10/12 rounded-2xl absolute bottom-5 left-1/2 -translate-x-1/2
-                  //  py-3 px-5 flex items-center justify-between group-hover:bottom-7 duration-500 border border-black-500"
-                  //     >
-                  //       <div>
-                  //         <h2 className="font-semibold leading-none mb-2">
-                  //           {project.title}
-                  //         </h2>
-                  //         <p className="text-sm text-gray-700">
-                  //           {project.description}
-                  //         </p>
-                  //       </div>
-                  //       <div
-                  //         className="border rounded-full border-black w-9 aspect-square flex
-                  //      items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300
-                  //      transition"
-                  //       >
-                  //         <Image
-                  //           onClick={() => openPopup(project)}
-                  //           alt=""
-                  //           src={assets.send_icon}
-                  //           className="w-5"
-                  //         />
-                  //       </div>
-                  //     </div>
-                  //   </motion.div>
-
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
@@ -396,7 +360,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
           transition={{ duration: 0.5, delay: 1.1 }}
           href="/projects"
           className="w-max flex items-center justify-center gap-2 text-gray-700
-        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20
+        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto mt-12 sm:mb-10
         hover:bg-light-hover duration-500 dark:border dark:border-white dark:text-white dark:hover:bg-dark-hover"
         >
           Show more{" "}

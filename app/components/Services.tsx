@@ -19,13 +19,13 @@ const Services = () => {
         transition={{ duration: 0.3, delay: 0.3 }}
         className="text-center mb-2 text-lg font-ovo"
       >
-        What i offer
+        What I Offer
       </motion.h4>
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center text-5xl font-ovo"
+        className="text-center text-4xl sm:text-5xl font-ovo"
       >
         My Services
       </motion.h2>
@@ -33,39 +33,45 @@ const Services = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-ovo"
+        className="text-center max-w-2xl mx-auto mt-5 mb-10 font-ovo"
       >
-        I am a frontend developer from California, USA with 10 years of
-        experience in multiple companies like Microsoft, Tesla and Apple.
+        {/* Offering end-to-end digital web solutions — from responsive frontends to
+        scalable backends and CMS platforms. */}
+        Offering complete end-to-end digital web solutions — from responsive
+        frontends to scalable backends and enterprise CMS platforms.”
       </motion.p>
 
       <motion.div
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 0 }}  
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.9 }}
-        className="grid [grid-template-columns:var(--gridTemplateColumns-auto)] gap-6 my-10"
+        className="grid [grid-template-columns:var(--gridTemplateColumns-auto)] gap-6 my-0 sm:my-10"
       >
         {serviceData.map((data, index) => (
           <motion.div
-          whileHover={{scale: 1.05}}
+            whileHover={{ scale: 1.05 }}
             key={index}
-            className="border border-gray-400 rounded-lg px-8 py-12
+            className="border border-gray-400 rounded-lg px-8 sm:px-8 py-12 sm:py-12
             hover:shadow-[var(--boxShadow-black)] hover:bg-light-hover cursor-pointer hover:-translate-y-1 duration-500 dark:hover:bg-dark-hover dark:hover:shadow-[var(--boxShadow-white)]"
           >
-            <Image alt="" className="w-10" src={data.icon} />
-            <h3 className="text-lg my-4 text-gray-700 dark:text-white">
+            <Image
+              alt=""
+              className="w-13 h-13 p-3 bg-[#FE388B] border rounded-[8px]"
+              src={data.icon}
+            />
+            <h3 className="text-lg mt-4 sm:mt-4 mb-3 sm:mb-4 text-gray-700 dark:text-white">
               {data.title}
             </h3>
             <p className="text-sm text-gray-600 leading-5 dark:text-white/80">
               {data.description}
             </p>
-            <a
+            {/* <a
               href={data.link}
               className="flex items-center gap-2 text-sm mt-5"
             >
               Read more{" "}
               <Image alt="" src={assets.right_arrow} className="w-4" />
-            </a>
+            </a> */}
           </motion.div>
         ))}
       </motion.div>
