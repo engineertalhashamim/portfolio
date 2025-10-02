@@ -46,13 +46,13 @@ const Navbar = () => {
             : ""
         }`}
       >
-        <a href="/#top">
+        <Link href="/#top">
           <Image
             alt=""
             src={isDarkMode ? assets.logo_dark : assets.logo}
             className="w-26 cursor-pointer mr-14"
           />
-        </a>
+        </Link>
 
         <ul
           className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3
