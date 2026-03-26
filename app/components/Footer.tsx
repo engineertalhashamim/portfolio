@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { useDarkMode } from "../context/DarkModeContext";
 
-
 const Footer = () => {
   const { isDarkMode } = useDarkMode();
 
@@ -29,17 +28,20 @@ const Footer = () => {
         <p>© 2025 Talha Shamim. All rights reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
-            <a target="_blank" href="https://www.instagram.com">
+            <a target="_blank" href="https://github.com/engineertalhashamim">
               Github
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.instagram.com">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/muhammad-talha-shamim-a0583a185"
+            >
               Linkdin
             </a>
           </li>
           <li>
-            <a target="_blank" href="https://www.instagram.com">
+            <a target="_blank" href="#">
               Twitter
             </a>
           </li>
