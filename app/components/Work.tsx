@@ -126,7 +126,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 dark:text-black"
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-5 dark:text-black"
             >
               {(showAll ? workDataMern : workDataMern.slice(0, 4)).map(
                 (project, index) => (
@@ -134,7 +134,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                     key={index}
-                    className="relative aspect-square rounded-2xl cursor-pointer group border-4 border-pink-200 overflow-hidden"
+                    className="relative rounded-2xl cursor-pointer group border-4 p-28 border-pink-200 overflow-hidden"
                   >
                     {/* Full image */}
                     <Image
@@ -173,7 +173,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
                       </div>
                     </div>
                   </motion.div>
-                )
+                ),
               )}
             </motion.div>
           )}
@@ -182,7 +182,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-0 gap-5 dark:text-black"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 my-0 gap-5 dark:text-black"
             >
               {(showAll
                 ? workDataWordpress
@@ -193,7 +193,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.3 }}
                   key={index}
-                  className="relative aspect-square rounded-2xl cursor-pointer group border-4 border-pink-200 overflow-hidden"
+                  className="relative rounded-2xl cursor-pointer group border-4 p-28 border-pink-200 overflow-hidden"
                 >
                   {/* Full image */}
                   <Image
@@ -240,7 +240,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.9 }}
-              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 my-0 gap-5 dark:text-black"
+              className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 my-0 gap-5 dark:text-black"
             >
               {(showAll ? workDataShopify : workDataShopify.slice(0, 4)).map(
                 (project, index) => (
@@ -249,7 +249,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.3 }}
                     key={index}
-                    className="relative aspect-square rounded-2xl cursor-pointer group border-4 border-pink-200 overflow-hidden"
+                    className="relative rounded-2xl cursor-pointer group border-4 p-28 border-pink-200 overflow-hidden"
                     style={{ backgroundImage: `url(${project.bgImage})` }}
                   >
                     {/* Full image */}
@@ -289,7 +289,7 @@ const Work = ({ showAll, showAllButton }: workProps) => {
                     </div>
                   </motion.div>
                   // </div>
-                )
+                ),
               )}
             </motion.div>
           )}
