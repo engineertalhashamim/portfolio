@@ -89,8 +89,32 @@ export const assets = {
 
 export const workDataMern = [
   {
+    title: "CRM",
+    description: "React + Express + PostgreSQL",
+    detailDes:
+      "Built a full-stack CRM system for business management using React, Redux, Express, and PostgreSQL, featuring secure authentication, customer tracking, lead management, and dynamic dashboards, with tools for communication history, task management, and ongoing enhancements for improved productivity and client relationships.",
+    bgImage: "/crm-dashboard.png",
+    viewSource: "https://github.com/engineertalhashamim/crm-dashboard",
+  },
+  {
+    title: "ERP",
+    description: "React + Laravel + PostgreSQL",
+    detailDes:
+      "Built a full-stack SaaS-based ERP system for business management using React, TypeScript, Redux, Express, and PostgreSQL, featuring a component-based architecture, secure authentication, multi-tenant architecture, role-based access control, and dynamic dashboards, with modules for inventory, sales, purchases, and accounts, enabling scalable operations and improved efficiency across multiple users and organizations.",
+    bgImage: "/Erp-admin-dashboard.png",
+    viewSource: "https://github.com/engineertalhashamim/erp-backend-laravel",
+  },
+  {
+    title: "Courses Provider",
+    description: "Next js",
+    detailDes:
+      "Built a full-stack SaaS-based ERP system for business management using React, Redux, Express, and PostgreSQL, featuring secure authentication, multi-tenant architecture, role-based access control, and dynamic dashboards, with modules for inventory, sales, purchases, and accounts, enabling scalable operations and improved efficiency across multiple users and organizations.",
+    bgImage: "/nextjslandingpage.png",
+    viewSource: "https://github.com/engineertalhashamim/courses-provider-app",
+  },
+  {
     title: "ERP Solution",
-    description: "PERN",
+    description: "React + Express + PostgreSQL",
     detailDes:
       "Built a full-stack ERP software for a hardware business using React, Redux, Express, and PostgreSQL, featuring secure login with express sessions, multi-warehouse management, and dynamic setup for users, products, and accounts. Implemented N-level chart of accounts, products and warehouse management and actively developing sales, purchase modules for complete operational control.",
     bgImage: "/erp-project.png",
@@ -138,6 +162,14 @@ export const workDataMern = [
       "This “Simple Digital” project is a microsite highlighting scalable, custom digital solutions—branding, websites/apps, AI, data analytics, quality assurance, resource augmentation. I crafted its UI/UX, marketing messaging, and service presentation. I built contact form integration, metrics displays (projects done, brands served), and sections that clearly articulate value with minimal design. The goal was to strengthen trust and conversion by showing results, expertise, and modern tech‑driven services in a clean, responsive design.",
     bgImage: "/simpledigital.png",
     viewSite: "https://digitalcuberoot.com/talha/index.php",
+  },
+  {
+    title: "Digital Cuberoot",
+    description: "HTML + CSS + JS",
+    detailDes:
+      "Digital CubeRoot is a full‑service digital studio transforming ideas into digital products and experiences. I designed and developed its site to showcase services like Strategy, UI/UX design, Product Development, Testing & QA, Data Analytics, and Resource Augmentation. My work included implementing a portfolio gallery, interactive navigation, responsive layouts, and content clarity. Overall the site presents credibility and expertise, helping attract clients through polished visuals, strong branding, and smooth user journey.",
+    bgImage: "/digitalcuberoot2.png",
+    viewSite: "https://www.digitalcuberoot.com",
   },
 ];
 
@@ -286,7 +318,7 @@ export const infoList = [
     iconDark: assets.code_icon_dark,
     title: "Languages",
     description:
-      "Frontend: HTML5, CSS3, JavaScript (ES6+), React.js, Next.js · Backend: Node.js, Express.js · DB: MongoDB, PostgreSQL, Firebase · CMS: Shopify, WordPress",
+      "Frontend: HTML5, CSS3, JavaScript (ES6+), React.js, Next.js, TypeScript, Redux, Axios · Backend: Node.js, Express.js, Laravel · DB: MongoDB, PostgreSQL, Firebase · CMS: Shopify, WordPress",
   },
   {
     icon: assets.edu_icon,
@@ -300,7 +332,7 @@ export const infoList = [
     iconDark: assets.project_icon_dark,
     title: "Projects",
     description:
-      "ERP Software (MERN Stack) · Product Dashboard (Firebase) · Blog Post (Appwrite) · Shopify & WordPress E-commerce Solutions · Multiple React Mini Projects",
+      "CRM (React|Express|PostgreSQL) · ERP SaS Solution (React|Laravel) · ERP Software (PERN Stack) · Product Dashboard (Firebase) · Blog Post (Appwrite) · Shopify & WordPress E-commerce Solutions · Multiple React Mini Projects",
   },
 ];
 

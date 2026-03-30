@@ -12,7 +12,7 @@ const Footer = () => {
         <Image
           alt=""
           src={isDarkMode ? assets.logo_dark : assets.logo}
-          className="w-30 mx-auto mb-2"
+          className="w-30 mx-auto md:mb-2 mb-0"
         />
         <div className="flex justify-center gap-2 mx-auto w-max text-center items-center">
           <Image
@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+      <div className="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] md:mt-12 mt-6 py-6">
         <p>© 2025 Talha Shamim. All rights reserved</p>
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li>
