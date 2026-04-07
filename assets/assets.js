@@ -110,6 +110,7 @@ export const workDataMern = [
     detailDes:
       "Built a full-stack SaaS-based ERP system for business management using React, Redux, Express, and PostgreSQL, featuring secure authentication, multi-tenant architecture, role-based access control, and dynamic dashboards, with modules for inventory, sales, purchases, and accounts, enabling scalable operations and improved efficiency across multiple users and organizations.",
     bgImage: "/nextjslandingpage.png",
+    viewSite: "https://courses-provider-app.vercel.app",
     viewSource: "https://github.com/engineertalhashamim/courses-provider-app",
   },
   {
@@ -119,6 +120,15 @@ export const workDataMern = [
       "Built a full-stack ERP software for a hardware business using React, Redux, Express, and PostgreSQL, featuring secure login with express sessions, multi-warehouse management, and dynamic setup for users, products, and accounts. Implemented N-level chart of accounts, products and warehouse management and actively developing sales, purchase modules for complete operational control.",
     bgImage: "/erp-project.png",
     viewSource: "https://github.com/engineertalhashamim/hydraulic-project",
+  },
+  {
+    title: "MyBindle Landing Page",
+    description: "React JS - (GSAP) Animation",
+    detailDes:
+      "A modern, animated landing page for a conceptual social platform. Built with React and GSAP, featuring smooth entrance transitions, scroll-triggered animations, and a fully responsive design converted from Figma. Includes feature sections, testimonial slider, and installation guide with clean component architecture.",
+    bgImage: "/mybindle.png",
+    viewSite: "https://mybindle-talhashamim.vercel.app",
+    viewSource: "https://github.com/engineertalhashamim/my-bindle",
   },
   {
     title: "Sofa Set Landing Page",

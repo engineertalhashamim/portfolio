@@ -463,26 +463,30 @@ const Work = ({ showAll, showAllButton }: workProps) => {
       )}
 
       {showAllButton ? (
-        <motion.a
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 1.1 }}
-          href="/projects"
-          className="w-max flex items-center justify-center gap-2 text-gray-700
+          className=""
+        >
+          <Link
+            href="/projects"
+            className="w-max flex items-center justify-center gap-2 text-gray-700
         border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto mt-12 sm:mb-10
         hover:bg-light-hover duration-500 dark:border dark:border-white dark:text-white dark:hover:bg-dark-hover"
-        >
-          Show more{" "}
-          <Image
-            alt="Right arrow"
-            src={
-              isDarkMode
-                ? assets.right_arrow_bold_dark
-                : assets.right_arrow_bold
-            }
-            className="w-4"
-          />
-        </motion.a>
+          >
+            Show more{" "}
+            <Image
+              alt="Right arrow"
+              src={
+                isDarkMode
+                  ? assets.right_arrow_bold_dark
+                  : assets.right_arrow_bold
+              }
+              className="w-4"
+            />
+          </Link>
+        </motion.div>
       ) : (
         ""
       )}
